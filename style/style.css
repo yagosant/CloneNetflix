@@ -1,0 +1,47 @@
+/* declarando variaveis para fazer o re-uso*/
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+/* resetando o CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* impede de ultrapassar a borda da caixa */
+}
+
+body{
+    /* Usando as variaveis */
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+
+header .container{
+    /* alinha o dislpay na tela como row*/
+   display: flex;
+   flex-direction: row;
+   align-items: center;  /* vertical*/
+   justify-content: space-between; /* horizontal*/
+
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+/* Passa o caminho até a tag */
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
