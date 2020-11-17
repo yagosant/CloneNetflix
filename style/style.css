@@ -11,6 +11,7 @@
     box-sizing: border-box; /* impede de ultrapassar a borda da caixa */
 }
 
+/* base elementos */
 body{
     /* Usando as variaveis */
     background: var(--preto);
@@ -44,4 +45,17 @@ header nav a{
 
 header nav a:hover{
     color: #fff;
+}
+
+/* Info filmes principal */
+.filme-principal{
+    font-size: 16px;
+    /* escureceu a imagem, o gradient pede sempre duas cores */
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-one-piece.jpg');
+
+    height: 400px;
+    background-size: cover; /* cobre o tamanho disponivel, a área de cobertura */
+
+    display: flex;
+    flex-direction: column;
 }
