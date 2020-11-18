@@ -1,0 +1,20 @@
+
+/* regras de configuração de acordo com o tamanho da tela*/
+
+@media screen and (max-width:700px){
+    header .container{
+        display: flex;
+        flex-direction: column; /* sempre vai jogar para baixo quando a tela for pequena*/
+    }
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+        
+    }
+}
+
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+    }
+}
